@@ -11,7 +11,7 @@ import Alamofire
 class NetWordManager: NSObject{
     
     
-    let keyApi = "https://5eba40143f971400169923ef.mockapi.io/person?page=1&limit=10"
+    let keyApi = "https://5eba40143f971400169923ef.mockapi.io/person?page=1"
     
     func listCV(completion: @escaping ([Data]) -> Void) {
         Alamofire.request(keyApi).response { response in
